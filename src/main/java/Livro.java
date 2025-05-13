@@ -2,32 +2,41 @@
 public class Livro {
     //Atributos(Características)
 private static int proximoIsbn = 1;
-private int Isbn;
-private String Titulo;
-private String Autor;
-private int Ano;    
+private int isbn;
+private String titulo;
+private String autor;
+private int ano;    
 //Construtor (Garante que o objeto comece a existir com valores válidos)
-public Livro(String Titulo, String Autor, int Ano) {
-        this.Titulo = Titulo;
-        this.Autor = Autor;
-        this.Ano = Ano;
-        this.Isbn=proximoIsbn++;
+public Livro(String titulo, String autor, int ano) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ano = ano;
+        this.isbn=proximoIsbn++;
 }
    //Método gette(utilizado para acessar o valor de um atributo privado da classe)
     public int getIsbn(){
-    return Isbn;
+    return isbn;
     }
     
     public String getTitulo(){
-    return Titulo;
+    return titulo;
     }
      public String getAutor(){
-    return Autor;
+    return autor;
     }
       public int getAno(){
-    return Ano;
+    return ano;
     }
     
+    public void setTitulo(String novoTitulo){
+    this.titulo=novoTitulo;
+    }
+    public void setAutor(String novoAutor){
+    this.autor=novoAutor;
+    }
+    public void setAno(int novoAno){
+    this.ano=novoAno;
+    }
     
     
     }
